@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <style>
+    	body{width:100%; height:100%;box-sizing:border-box;background:#f6f6f6;padding-top:10px; padding-bottom:55px;}
+    	.top_table{margin-bottom:10px;background:#fff;}
+    	.mui-table-view:after {height: 0px; }
+		.mui-table-view:before { height: 0px;}
+		.order_img{width:80px; height:80px;}
+		.order_title{font-size:16px;color:#333;padding-bottom:6px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+		.mui-ellipsis{font-size: 14px;}
+		.basis_list{width: 100%;box-sizing: border-box;background:#fff;padding: 5px 0 5px 15px;font-size:14px;color: #333;}
+		.basis_list li{width: 100%;box-sizing: border-box;overflow:hidden;padding: 6px 0;}
+		.basis_list li p{width:50%;float:left;color: #333;}
+		.basis_list li:last-child{border:none;}
+		.basis_list li p:nth-child(1){text-align:left;height:28px;line-height:28px;}
+		.basis_list li p:nth-child(2){text-align:right;box-sizing:border-box;padding-right:10px;}
+		.mui-numbox {width: 95px;height: 27px;padding: 0 30px;float:right;margin-right:15px;}
+		.mui-numbox [class*=btn-numbox], .mui-numbox [class*=numbox-btn] {width: 30px;}
+         .name_shop{font-size:16px;font-weight:600;color: #222;text-align:left;}
+         .shop_price{font-size:14px;color: #ff4d4d;text-align:left;}
+         .price_shop{display:inline-block;padding:0px;box-sizing: border-box;font-size:18px;color: #ff4d4d;text-align:left;font-weight:600;}
+		.price_shop span{font-size:12px;font-weight:500;}
+		.title_det{width: 100%;box-sizing: border-box;background:#f6f6f6;padding:12px 0 8px 15px;font-size:16px;color: #666;}
+		.news_title{
+			color: #f8584f;line-height: 22px;font-weight: 600;overflow: hidden;padding: 0px 15px 8px;
+		    text-indent:20px;width: 100%;box-sizing: border-box;background:#fff;
+		}
+		.mui-input-group:after,
+		.mui-input-group:before {height: 0px;}
+		.mui-input-row input,
+		.mui-input-row label{font-size: 14px;}
+		.mui-input-group .mui-input-row:after{background-color: #dddddd;}
+		.mui-input-group .mui-input-row:last-child:after{height:0;}
+		.beizhu{width: 100%; height:200px;box-sizing: border-box;background:#fff; padding:15px;color: #333;font-size:14px;line-height: 22px;}
+		
+		.fix_bottom{width:100%; height:46px;border-top:1px solid #ddd;position:fixed;bottom:0; left:0;z-index:100;background:#f6f6f6;}
+		.total_price{float:left;width:60%;text-align:center; line-height:46px;background:#fff;color: #222;font-size: 16px;border-radius:0;}
+		.next_step{display:block;width:40%;float:right;text-align:center; line-height:46px;background:#fe4e4e;color: #FFFFFF;font-size: 16px;}
+    </style>
+</head>
+<body>
+	<ul class="mui-table-view top_table">
+	    <li class="mui-table-view-cell mui-media">
+	        <a href="javascript:;">
+	            <img class="mui-media-object mui-pull-left order_img" src="../image/banner0.png">
+	            <div class="mui-media-body">
+	                <h3 class="order_title">普吉岛10日游，有很多妹子看的哦尽快来赶紧来</h3>
+	                <p class='mui-ellipsis'>团期：2017-3-8</p>
+	            </div>
+	        </a>
+	    </li>
+	</ul>
+	<div class="title_det">出行人数</div>
+	<ul class="basis_list">
+		<li>
+			<p class="shop_price">
+				老人：
+				<span class="price_shop">
+					<span>￥</span>2389
+				</span>
+			</p>
+			<p>
+				<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+				  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+				  <input class="mui-numbox-input" type="number" />
+				  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+				</div>
+			</p>
+		</li>
+		<li>
+			<p class="shop_price">
+				成人：
+				<span class="price_shop">
+					<span>￥</span>2389
+				</span>
+			</p>
+			<p>
+				<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+				  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+				  <input class="mui-numbox-input" type="number" />
+				  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+				</div>
+			</p>
+		</li>
+		<li>
+			<p class="shop_price">
+				儿童占床：
+				<span class="price_shop">
+					<span>￥</span>2389
+				</span>
+			</p>
+			<p>
+				<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+				  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+				  <input class="mui-numbox-input" type="number" />
+				  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+				</div>
+			</p>
+		</li>
+		<li>
+			<p class="shop_price">
+				儿童不占床：
+				<span class="price_shop">
+					<span>￥</span>2389
+				</span>
+			</p>
+			<p>
+				<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+				  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+				  <input class="mui-numbox-input" type="number" />
+				  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+				</div>
+			</p>
+		</li>
+	</ul>
+	<p class="news_title">
+		提示：69岁以上老人我社无法接待，敬请谅解（* 未成年人及60岁-69岁老人需要正常年龄家属陪同，并需签署免责协议！
+	</p>
+	<div class="title_det">附加费用</div>
+	<ul class="basis_list">
+		<li>
+			<p class="shop_price">
+				签证：
+				<span class="price_shop">
+					<span>￥</span>2389
+				</span>
+			</p>
+			<p>
+				<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+				  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+				  <input class="mui-numbox-input" type="number" />
+				  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+				</div>
+			</p>
+		</li>
+		<li>
+			<p class="shop_price">
+				接机：
+				<span class="price_shop">
+					<span>￥</span>2389
+				</span>
+			</p>
+			<p>
+				<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+				  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+				  <input class="mui-numbox-input" type="number" />
+				  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+				</div>
+			</p>
+		</li>
+	</ul>
+	<div class="title_det">联系人信息</div>
+	<form class="mui-input-group">
+	    <div class="mui-input-row">
+	        <label>用户名</label>
+	    <input type="text" class="mui-input-clear" placeholder="请输入用户名">
+	    </div>
+	    <div class="mui-input-row">
+	        <label>联系电话</label>
+	        <input type="number" class="mui-input-clear" placeholder="请输入电话">
+	    </div>
+	</form>
+	<div class="title_det">备注</div>
+	<textarea class="beizhu" placeholder="最多50个字......" max-length="50"></textarea>
+	
+	<div class="fix_bottom">
+		<div class="total_price">
+			 订单总额：￥2345
+		</div>
+		<div class="next_step" onclick="phoneComC();">下一步</div>
+	</div>
+	
+</body>
+
+<script type="text/javascript" src="../script/mui.min.js"></script>	
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+	apiready = function(){
+		
+	};
+    //订单提交
+    function phoneComC () {
+    	api.confirm({
+    		title: '温馨提示',
+    		msg: '您的订单已提交后台，请耐心等待审核！您可在订单中查看订单的状态。',
+		    buttons: ['首页', '取消']
+		}, function(ret, err) {
+		    var index = ret.buttonIndex;
+		    if(index == 1){
+		    	openWinDing();
+		    }else{
+		    	//alert("取消")
+		    }
+		});
+    };
+    function openWinDing () {
+        api.openWin({
+            name: 'index',
+            url: '../index.html',
+            bounces: false,
+            animation:{
+            	type: "movein",
+            	subType:"from_left", 
+            	duration:300  
+            },
+            pageParam: {key : ''}
+        });
+    };
+    
+    
+   
+</script>
+</html>
